@@ -1,7 +1,8 @@
+// Esta pagina es la inicial de la ruta /users
+
 import { useLoaderData } from '@remix-run/react'
-import React from 'react'
+
 import UserCard from '~/components/UserCard'
-import PageLayout from '~/layouts/PageLayout'
 
 export const loader = async () => {
   try {
@@ -29,14 +30,14 @@ const Users = () => {
   const users = useLoaderData<typeof loader>()
 
   return (
-    <PageLayout>
-      <p className='text-center text-2xl font-bold mb-12'>Usuarios</p>
+    <>
+      <p className='text-center text-2xl font-bold mb-12'>Users Index</p>
       <section className='grid grid-cols-3 gap-6'>
         {users.map((usr: IUser) => (
           <UserCard key={usr.id} user={usr} />
         ))}
       </section>
-    </PageLayout>
+    </>
   )
 }
 

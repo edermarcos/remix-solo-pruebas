@@ -1,3 +1,5 @@
+// Esta pagina seria /users/:userId
+
 import { type LoaderArgs } from '@remix-run/node'
 import { Link, useLoaderData } from '@remix-run/react'
 import React from 'react'

@@ -7,7 +7,7 @@ interface Props {
 
 const RootLayout = ({ children }: Props) => {
   return (
-    <section>
+    <section className=''>
       <Header />
       {children}
     </section>
