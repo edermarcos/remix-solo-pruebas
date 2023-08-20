@@ -1,5 +1,5 @@
 import { Link } from '@remix-run/react'
-import { type IUser } from '~/routes/users._index'
+import { type IUser } from '~/interfaces/IUser'
 
 interface IUserCardProps {
   user: IUser
